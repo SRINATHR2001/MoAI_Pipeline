@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="~/MoAI_Project">
+
+        <groups>
+            <run>
+                <exclude name="Smoke"/>
+                <exclude name="Sanity"/>
+            </run>>
+        </groups>
+
+        <classes>
+            <!--Demo-->
+            <class name="Zcom.Appium.Oppo">
+                <methods>
+                    <exclude name="Login"/>
+                    <exclude name="ConnectingDevices"/>
+                    <exclude name="ChangeCountryCode"/>
+                </methods>
+            </class>
+            
+            <!--Welcome page.-->
+            <class name="com.MoAI.Welcomepage.welcomePage">
+                <methods>
+                    <exclude name="TC_001"/>
+                </methods>
+            </class>
+
+            <!--Login page-->
+            <class name="com.MoAI.LoginPage.LoginPage">
+                <methods> <!--07/10/24-->
+                   <exclude name="TC_002"/>
+                   <exclude name="TC_003"/>
+                   <exclude name="TC_004"/>
+                   <exclude name="TC_005"/>
+                   <exclude name="TC_006"/>
+                   <exclude name="TC_007"/>
+                   <exclude name="TC_008"/>
+                   <exclude name="TC_009"/>
+               </methods>
+            </class>
+
+            <!--Login Scenarios with positive and negative.-->
+            <class name="com.MoAI.LoginPage.LoginScenarios">
+                <methods>
+                    <exclude name="LogIn"/>
+                    <exclude name="LogOut"/>
+                    <exclude name="InvalidPhoneNumber"/>
+                    <exclude name="InvalidOTP"/>
+                </methods>
+            </class>
+
+            <!--DashBoard.-->
+            <class name="com.MoAI.DashBoardPage.DashBoardPage">
+                <methods>
+                    <exclude name="TC_010"/>
+                    <exclude name="TC_011"/>
+                    <exclude name="TC_012"/>
+                    <exclude name="TC_013"/>
+                    <exclude name="TC_014"/>
+                    <exclude name="TC_015"/>
+                    <exclude name="TC_016"/>
+                    <exclude name="TC_017"/> <!--still in progress-->
+                    <exclude name="TC_018"/>
+                    <exclude name="TC_019"/> <!--still in progress-->
+                    <exclude name="TC_025"/>
+                    <exclude name="TC_026"/>
+                    <exclude name="TC_027"/>
+                    <include name="TC_028"/>
+                    <exclude name="TC_029"/>
+                    <exclude name="TC_030"/>
+                </methods>
+            </class>
+
+            <!--Downloading the report.-->
+            <class name="com.MoAI.ReportsPage.DownloadingReports">
+                <methods>
+                    <exclude name="TC_020"/>
+                    <exclude name="TC_021"/>
+                    <exclude name="TC_022"/>
+                </methods>
+            </class>
+
+            <!--Device-->
+            <class name="com.MoAI.Devices.Devices">
+                <methods>
+                    <exclude name="TC_023"/>
+                    <exclude name="TC_024"/>
+                </methods>
+            </class>
+
+            <!--Profile-->
+            <class name="com.MoAI.Profile.Profile">
+                <methods>
+                    <exclude name="TC_031"/>
+                    <exclude name="TC_032"/>
+                </methods>
+            </class>
+
+            <class name="com.MoAI.More.More">
+                <methods>
+                    <exclude name="TC_033"/>
+                    <exclude name="TC_034"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

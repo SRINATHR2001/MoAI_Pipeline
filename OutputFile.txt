@@ -1,0 +1,58 @@
+print into both,
+print into both 23 ,
+Nov 06, 2024 12:11:05 PM com.MoAI.DashBoardPage.DashBoardPage LoggerDemoCase
+INFO: this is form logger for both console and file print.
+Nov 06, 2024 12:11:05 PM com.MoAI.DashBoardPage.DashBoardPage LoggerDemoCase
+WARNING: This warning for both console and file print.
+Nov 06, 2024 12:16:19 PM com.MoAI.More.More TC_034
+INFO: Notification toggle is enabled : true
+Nov 06, 2024 12:16:20 PM com.MoAI.More.More TC_034
+INFO: Notification toggle is enabled : true
+Nov 06, 2024 12:16:22 PM com.MoAI.More.More TC_034
+INFO: User currently present in : Notifications page.
+Nov 06, 2024 12:16:23 PM com.MoAI.More.More TC_034
+INFO: Notification is present : 
+Nov 06, 2024 12:16:24 PM com.MoAI.More.More TC_034
+INFO: Notification description :Take SpO2
+Nov 06, 2024 12:16:25 PM com.MoAI.More.More TC_034
+INFO: Notification time : 00:15
+Nov 06, 2024 12:16:25 PM com.MoAI.More.More TC_034
+INFO: Notification personal note : 00:15
+Nov 06, 2024 12:16:25 PM com.MoAI.More.More TC_034
+INFO: Notification personal note : Mon  Sun  Wed  
+Nov 06, 2024 12:16:28 PM com.MoAI.More.More TC_034
+INFO: Confirmation message : Are you sure want to clear Notification?
+Nov 06, 2024 12:16:32 PM com.MoAI.More.More TC_034
+INFO: User currently present in : FAQs page.
+Nov 06, 2024 12:16:33 PM com.MoAI.More.More TC_034
+INFO: How to use this app content is present : true
+Nov 06, 2024 12:16:36 PM com.MoAI.More.More TC_034
+INFO: Why do we use it content is present : true
+Nov 06, 2024 12:16:38 PM com.MoAI.More.More TC_034
+INFO: User currently present in : Contact Us page.
+Nov 06, 2024 12:16:38 PM com.MoAI.More.More TC_034
+INFO: User can see the To email address : true
+Nov 06, 2024 12:16:39 PM com.MoAI.More.More TC_034
+INFO: User can see the To email address : true
+Nov 06, 2024 12:16:42 PM com.MoAI.More.More TC_034
+INFO: Error message for less character : Message should be at least 10 characters.
+Nov 06, 2024 12:16:47 PM com.MoAI.More.More TC_034
+INFO: Success message for the : Request sent successfully
+Nov 06, 2024 12:23:09 PM com.MoAI.More.More TC_033
+INFO: Notification toggle is enabled : true
+Nov 06, 2024 12:23:11 PM com.MoAI.More.More TC_033
+INFO: Notification toggle is enabled : true
+Nov 06, 2024 12:23:12 PM com.MoAI.More.More TC_033
+INFO: User currently present in : Notifications page.
+Nov 06, 2024 1:10:29 PM com.MoAI.More.More TC_034
+INFO: User currently present in : About Us
+Nov 06, 2024 1:10:29 PM com.MoAI.More.More TC_034
+INFO: About us content is present : true
+Nov 06, 2024 1:10:33 PM com.MoAI.More.More TC_034
+INFO: User currently present in : Terms & Conditions
+Nov 06, 2024 1:10:34 PM com.MoAI.More.More TC_034
+INFO: Terms and Condition content is present : true
+Nov 06, 2024 1:10:37 PM com.MoAI.More.More TC_034
+INFO: User currently present in : Privacy Policy
+Nov 06, 2024 1:10:38 PM com.MoAI.More.More TC_034
+INFO: Privacy policy content is present : true
