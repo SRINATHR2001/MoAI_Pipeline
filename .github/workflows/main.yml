@@ -1,0 +1,36 @@
+name: Appium with Maven TestNG Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Start Appium server
+      run: |
+        nohup appium > appium.log 2>&1 &
+        echo "Appium started in the background"
+    - name: Wait for 10 seconds
+      run: sleep 10
+    - name: Cache Maven dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+    - name: Run Maven TestNG tests
+      run: mvn clean test
+    - name: Copy Surefire test reports to test_results directory
+      if: ${{ success() }}
+      run: |
+        mkdir -p ~/test_results
+        cp -r target/surefire-reports/* ~/test_results/
+        echo "Surefire reports copied to ~/test_results"
+    - name: Stop Appium server
+      run: |
+        pkill -f appium
+        echo "Appium stopped"
